@@ -1,0 +1,101 @@
+:root {
+    --primary: #E04E39;
+    --secondary: #9B2918;
+    --accent: #1E719B;
+    --accent-light: #74B0CE;
+    --accent-hard: #FBC840;
+    --disbled: #dbdbdb;
+    --black: #212121;
+    --grey-dark: #817F7F;
+    --grey: #EFEBEA;
+    --grey-light: #FDF7F6;
+    --white: #FDFDFD;
+
+    --unit: 8px;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    color: var(--black);
+}
+
+.bg-tomster{
+    background-image: url("../images/tomster-teacher.png");
+    background-size: calc(60 * var(--unit));
+    background-position-y: 100%;
+    background-position-x: 0;
+}
+.color-white{
+    color: var(--white);
+}
+
+.color-primary{
+    color: var(--primary);
+}
+
+.color-dark-primary{
+    color: var(--secondary);
+}
+
+.size-xl{
+    font-size: calc(20 * var(--unit))
+}
+
+.size-l{
+    font-size: calc(10 * var(--unit))
+}
+
+.size-ml{
+    font-size: calc(8 * var(--unit))
+}
+
+.features .capitalize.size-m{
+    font-size: calc(4 * var(--unit))
+}
+
+.flexy{
+    display: flex;
+}
+
+.flexy-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.space-around{
+    justify-content: space-around;
+}
+
+.capitalize{
+    text-transform: capitalize;
+}
+
+.margin-h{
+    margin-right: var(--unit);
+    margin-left: var(--unit);
+}
+
+.margin-v{
+    margin-top: var(--unit);
+    margin-bottom: var(--unit);
+}
+
+.no-margin{
+    margin: 0;
+}
+
+.max-size-l{
+    max-height: calc(6 * var(--unit));
+}
+
+.max-size-xxl{
+    max-height: calc(50 * var(--unit));
+}
