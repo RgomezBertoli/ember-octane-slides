@@ -19,83 +19,101 @@
     color: var(--black);
 }
 
-.bg-tomster{
+.bg-tomster {
     background-image: url("../images/tomster-teacher.png");
     background-size: calc(60 * var(--unit));
     background-position-y: 100%;
     background-position-x: 0;
 }
-.color-white{
+
+.bg-keep-calm {
+    background-image: url("../images/background-keep-calm.png")
+}
+
+.margin-inherit{
+    margin:inherit
+}
+
+.color-white {
     color: var(--white);
 }
 
-.color-primary{
+.color-primary {
     color: var(--primary);
 }
 
-.color-dark-primary{
+.color-dark-primary {
     color: var(--secondary);
 }
 
-.size-xl{
+.size-xl {
     font-size: calc(20 * var(--unit))
 }
 
-.size-l{
+.size-l {
     font-size: calc(10 * var(--unit))
 }
 
-.size-ml{
+.size-ml {
     font-size: calc(8 * var(--unit))
 }
 
-.features .capitalize.size-m{
+.features .capitalize.size-m {
     font-size: calc(4 * var(--unit))
 }
 
-.flexy{
+.flexy {
     display: flex;
 }
 
-.flexy-column{
+.flexy-column {
     display: flex;
     flex-direction: column;
 }
 
-.align-center{
+.align-center {
     align-items: center;
 }
 
-.justify-center{
+.justify-center {
     justify-content: center;
 }
 
-.space-around{
+.space-around {
     justify-content: space-around;
 }
 
-.capitalize{
+.capitalize {
     text-transform: capitalize;
 }
 
-.margin-h{
+.margin-h {
     margin-right: var(--unit);
     margin-left: var(--unit);
 }
 
-.margin-v{
+.margin-v {
     margin-top: var(--unit);
     margin-bottom: var(--unit);
 }
 
-.no-margin{
+.no-margin {
     margin: 0;
 }
 
-.max-size-l{
+.max-size-l {
     max-height: calc(6 * var(--unit));
 }
 
-.max-size-xxl{
+.max-size-xxl {
     max-height: calc(50 * var(--unit));
+}
+
+.structure-image {
+    height: 75vh;
+    width: auto;
+}
+
+.text-center{
+    text-align: center;
 }

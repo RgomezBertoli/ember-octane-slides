@@ -62,7 +62,7 @@
           </h1>
           <hr style="height: 5px">
           <div class="flexy space-around">
-            <p class="text-intro color-white">A Dónde vamos y De Dónde venimos</p>
+            <p class="text-intro color-white">De Dónde venimos y a Dónde vamos</p>
           </div>
         </div>
       </section>
@@ -70,7 +70,7 @@
         <div class="wrap">
           <img class="alignleft size-50" src="/static/images/midtown-comics.jpg" alt="midtown-comics">
           <h2>Rubén Gómez Bertoli</h2>
-          <p><code>Desarrollador Fullstack</code></p>
+          <p><code>Desarrollador Front/Back-End</code></p>
           <p class="margin-v">
             <a href="https://twitter.com/rGomezBertoli" title="Twitter">
               <i class="fab fa-twitter"></i>
@@ -83,6 +83,11 @@
               rgomezbertoli
             </a>
           </p>
+        </div>
+      </section>
+      <section class="aligncenter">
+        <div class="wrap shadow">
+          <img class="size-70" src="/static/images/ember-release-1.0.png" alt="ember-release">
         </div>
       </section>
       <section class="aligncenter">
@@ -140,13 +145,13 @@
           <hr>
           <div class="bg-white shadow">
             <ul class="flexblock reasons">
-              <li>
+              <li class="flexy justify-center">
                 <p>
                   Un Addon es la forma que tiene Ember de externalizar código en forma de librería y permitir su
                   reusabilidad.
                 </p>
               </li>
-              <li>
+              <li class="flexy justify-center">
                 <p>
                   La comunidad de Ember tiene un sitio dedicado para publicar todos los Addons disponibles para su uso
                   en tu propia App.
@@ -155,6 +160,180 @@
             </ul>
           </div>
         </div>
+      </section>
+      <section class="aligncenter">
+        <div class="wrap shadow">
+          <img class="size-60" src="/static/images/ember-observer.png" alt="ember-obsever">
+        </div>
+      </section>
+      <section class="aligncenter">
+        <div class="wrap size-50">
+          <h1>Ember Engines</h1>
+          <hr>
+          <div class="bg-white shadow">
+            <ul class="flexblock reasons">
+              <li class="flexy justify-center">
+                <p>
+                  Son otra forma de modularizar código que tiene Ember pero con la idea de que sea totalmente
+                  independiente y además permiten que sean totalmente de carga perezosa.
+                </p>
+              </li>
+              <li class="flexy justify-center">
+                <p>
+                  Estos Engines pueden tener incluidas dependencias con Addons que pueden utilizar.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="aligncenter">
+        <div class="wrap size-50">
+          <h1>Addon <strong>VS</strong> Engine</h1>
+          <hr>
+          <div class="bg-white shadow">
+            <ul class="flexblock reasons">
+              <li class="flexy justify-center">
+                <p>
+                  Los Addons estan más centrados en la reusabilidad entre proyectos.
+                </p>
+              </li>
+              <li class="flexy justify-center">
+                <p>
+                  Los Engines se piensan para funcionalidades que son susceptibles de ser usadas pero que no estas
+                  seguro que se vaya a usar.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="aligncenter" style="background-color: var(--primary)">
+        <h1 class="color-white">Últimas Releases</h1>
+        <img class="size-30 margin-inherit" src="static/images/ember-release.png" alt="">
+      </section>
+      <section class="aligncenter">
+        <div class="wrap">
+          <h1>ES Classes</h1>
+          <hr>
+          <div class="wrap">
+            <pre class="content-left">
+            class EmberComponent extends Component{
+
+              @inject storeService;
+
+              @computed(first, second)
+              get sum(){return this.first + this.second;}
+
+              @action
+              doSomething(){}
+            }
+          </pre>
+            <div class="content-left shadow">
+              <ul class="flexblock reasons">
+                <li class="flexy justify-center">
+                  <p> Sintaxis más clara </p>
+                </li>
+                <li class="flexy justify-center">
+                  <p> Aprovechas las nuevas funcionalidades de JS </p>
+                </li>
+                <li class="flexy justify-center">
+                  <p> Escribes menos código </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="aligncenter">
+        <div class="wrap">
+          <h1>Modularización</h1>
+          <hr>
+          <div class="wrap">
+            <div class="content-left shadow">
+              <ul class="flexblock reasons">
+                <li class="flexy justify-center">
+                  <p> Sólo importas aquello que necesitas </p>
+                </li>
+                <li class="flexy justify-center">
+                  <p> Es un primer paso para poder hacer Tree Shaking </p>
+                </li>
+              </ul>
+            </div>
+            <pre class="content-left">
+                import Component from "@ember/component";
+                import Route from "@ember/routing/route";
+                import Controller from "@ember/controller";
+                import { computed } from "@ember/object";
+            </pre>
+          </div>
+        </div>
+      </section>
+      <section class="flexy align-center justify-center" style="position: relative">
+        <img class="size-30" src="static/images/JQuery-logo.png" alt="" style="position:absolute;">
+        <img class="size-30" src="static/images/forbidden-sign.png" alt="" style="position:absolute;">
+      </section>
+      <section class="aligncenter" style="background-color: var(--primary)">
+        <h1 class="color-white">Nuevos Horizontes</h1>
+        <img class="size-30 margin-inherit" src="static/images/ember-canary.png" alt="">
+      </section>
+      <section class="aligncenter">
+        <div class="wrap shadow">
+          <img class="size-60" src="/static/images/ember-octane.png" alt="ember-octane">
+        </div>
+      </section>
+      <section class="aligncenter">
+        <div class="wrap shadow">
+          <img class="size-70" src="/static/images/glimmer-components.png" alt="glimmer-components">
+        </div>
+      </section>
+      <section class="aligncenter" style="background-color: var(--primary)">
+        <h1 class="color-white">VUELVEN LOS PODS!!!!</h1>
+        <img class="size-30 margin-inherit" src="static/images/tomster-pods.png" alt="">
+      </section>
+      <section>
+        <div class="wrap flexy space-around">
+          <img class="size-60 structure-image" src="/static/images/normal-structure.png" alt="normal">
+          <img class="size-60 structure-image" src="/static/images/octane-structure.png" alt="octane">
+      </section>
+      <section>
+        <div class="wrap flexy space-around">
+          <div>
+            <h2 class="text-center">Estructura Antigua</h2>
+            <hr>
+            <ul>
+              <li>
+                Cada tipo de componente tenía una carpeta específica
+              </li>
+              <li>
+                La declaración de las partes de los componentes estaba distribuida
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="text-center">Estructura Nuevos Pods</h2>
+            <hr>
+            <ul>
+              <li>
+                <span>Ahora el JS y el HBS de un componente se organiza en la misma carpeta</span>
+              </li>
+              <li>
+                <span>Nos olvidamos de la carpeta Pods</span>
+              </li>
+              <li>
+                <span>Rutas y componentes se declaran dentro de la carpeta Ui</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="aligncenter">
+        <h1>Code Splitting (Propousal)</h1>
+        <hr>
+        <img class="size-60 margin-inherit" src="static/images/splitting.png" alt="">
+      </section>
+      <section class="aligncenter">
+        <span class="background bg-keep-calm"></span>
       </section>
     </article>
   </main>
