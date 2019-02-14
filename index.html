@@ -174,8 +174,8 @@
             <ul class="flexblock reasons">
               <li class="flexy justify-center">
                 <p>
-                  Son otra forma de modularizar código que tiene Ember pero con la idea de que sea totalmente
-                  independiente y además permiten que sean totalmente de carga perezosa.
+                  Son otra forma de modularizar funcionalidades de tu aplicación para que sean totalmente
+                  independiente y además permiten Lazy Loading.
                 </p>
               </li>
               <li class="flexy justify-center">
@@ -195,13 +195,20 @@
             <ul class="flexblock reasons">
               <li class="flexy justify-center">
                 <p>
-                  Los Addons estan más centrados en la reusabilidad entre proyectos.
+                  Los Addons estan más centrados en la reusabilidad, crear herramientas horizontales a toda la
+                  aplicación.
                 </p>
               </li>
               <li class="flexy justify-center">
                 <p>
-                  Los Engines se piensan para funcionalidades que son susceptibles de ser usadas pero que no estas
+                  Los Engines se piensan para funcionalidades aisladas que pueden ser usadas pero que no estas
                   seguro que se vaya a usar.
+                </p>
+              </li>
+              <li class="flexy justify-center">
+                <p>
+                  Los Addons son piezas más horizontales a tu aplicación y los Engines son funcionalidades más
+                  verticales.
                 </p>
               </li>
             </ul>
@@ -216,20 +223,8 @@
         <div class="wrap">
           <h1>ES Classes</h1>
           <hr>
-          <div class="wrap">
-            <pre class="content-left">
-            class EmberComponent extends Component{
-
-              @inject storeService;
-
-              @computed(first, second)
-              get sum(){return this.first + this.second;}
-
-              @action
-              doSomething(){}
-            }
-          </pre>
-            <div class="content-left shadow">
+          <div class="wrap size-70">
+            <div>
               <ul class="flexblock reasons">
                 <li class="flexy justify-center">
                   <p> Sintaxis más clara </p>
@@ -242,6 +237,20 @@
                 </li>
               </ul>
             </div>
+            <div class="flexy justify-center margin-v">
+              <pre>
+                class EmberComponent extends Component{
+    
+                  @inject storeService;
+    
+                  @computed(first, second)
+                  get sum(){return this.first + this.second;}
+    
+                  @action
+                  doSomething(){}
+                }
+              </pre>
+            </div>
           </div>
         </div>
       </section>
@@ -249,8 +258,8 @@
         <div class="wrap">
           <h1>Modularización</h1>
           <hr>
-          <div class="wrap">
-            <div class="content-left shadow">
+          <div class="wrap size-70">
+            <div>
               <ul class="flexblock reasons">
                 <li class="flexy justify-center">
                   <p> Sólo importas aquello que necesitas </p>
@@ -260,12 +269,14 @@
                 </li>
               </ul>
             </div>
-            <pre class="content-left">
+            <div class="flexy justify-center margin-v">
+              <pre>
                 import Component from "@ember/component";
                 import Route from "@ember/routing/route";
                 import Controller from "@ember/controller";
                 import { computed } from "@ember/object";
-            </pre>
+              </pre>
+            </div>
           </div>
         </div>
       </section>
@@ -293,11 +304,6 @@
       </section>
       <section>
         <div class="wrap flexy space-around">
-          <img class="size-60 structure-image" src="static/images/normal-structure.png" alt="normal">
-          <img class="size-60 structure-image" src="static/images/octane-structure.png" alt="octane">
-      </section>
-      <section>
-        <div class="wrap flexy space-around">
           <div>
             <h2 class="text-center">Estructura Antigua</h2>
             <hr>
@@ -310,6 +316,41 @@
               </li>
             </ul>
           </div>
+          <pre class="size-30">
+<code>     app
+      ├── adapter
+      │   ├── application.js
+      │   └── comment.js
+      ├── components
+      │   └── list-paginator.hbs
+      ├── controllers
+      ├── models
+      │   └── comment.js
+      ├── initializers
+      ├── instance-initializers
+      ├── routes
+      ├── serializers
+      │   ├── application.js
+      │   └── comment.js
+      ├── services
+      ├── templates
+      │   ├── components
+      │   │   └── list-paginator.hbs
+      │   ├── application.hbs
+      │   ├── index.hbs
+      │   └── posts
+      │       └── index.hbs
+      ├── styles
+      ├── utils
+      ├── app.js
+      ├── resolver.js
+      ├── index.html
+      └── router.js</code>
+          </pre>
+        </div>
+      </section>
+      <section>
+        <div class="wrap flexy space-around">
           <div>
             <h2 class="text-center">Estructura Nuevos Pods</h2>
             <hr>
@@ -325,10 +366,41 @@
               </li>
             </ul>
           </div>
+          <pre class="size-30">
+<code>     src
+      ├── data
+      │   ├── models
+      │   │   └── comment
+      │   │       ├── adapter.js
+      │   │       ├── model.js
+      │   │       └── serializer.js
+      ├── init
+      ├── services
+      ├── ui
+      │   ├── components
+      │   │   └── list-paginator
+      │   │       └── template.js
+      │   ├── routes
+      │   │   ├── application
+      │   │   │   └── template.hbs
+      │   │   ├── index
+      │   │   │   ├── controller.js
+      │   │   │   └── template.hbs
+      │   │   └── posts
+      │   │       ├── components
+      │   │       │   └── capitalize.js
+      │   │       ├── route.js
+      │   │       └── template.hbs
+      │   ├── styles
+      │   └── index.html
+      ├── utils
+      ├── main.js
+      └── router.js</code>
+          </pre>
         </div>
       </section>
       <section class="aligncenter">
-        <h1>Code Splitting (Propousal)</h1>
+        <h1>Code Splitting (Proposal)</h1>
         <hr>
         <img class="size-60 margin-inherit" src="static/images/splitting.png" alt="">
       </section>

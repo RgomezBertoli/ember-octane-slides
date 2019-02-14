@@ -27,11 +27,11 @@
 }
 
 .bg-keep-calm {
-    background-image: url("../images/background-keep-calm.png")
+    background-image: url("../images/background-keep-calm.png");
 }
 
-.margin-inherit{
-    margin:inherit
+.margin-inherit {
+    margin: inherit;
 }
 
 .color-white {
@@ -47,19 +47,31 @@
 }
 
 .size-xl {
-    font-size: calc(20 * var(--unit))
+    font-size: calc(20 * var(--unit));
 }
 
 .size-l {
-    font-size: calc(10 * var(--unit))
+    font-size: calc(10 * var(--unit));
 }
 
 .size-ml {
-    font-size: calc(8 * var(--unit))
+    font-size: calc(8 * var(--unit));
+}
+
+.size-m {
+    font-size: calc(4 * var(--unit));
+}
+
+.size-s {
+    font-size: calc(2 * var(--unit));
+}
+
+.size-xs {
+    font-size: var(--unit);
 }
 
 .features .capitalize.size-m {
-    font-size: calc(4 * var(--unit))
+    font-size: calc(4 * var(--unit));
 }
 
 .flexy {
@@ -114,6 +126,6 @@
     width: auto;
 }
 
-.text-center{
+.text-center {
     text-align: center;
 }
